@@ -6,7 +6,7 @@
   "culture": "en-us",
   "tokenizerVersion": "1.0.0",
   "intents": [
-    /**{
+    {
       "name": "BookFlight"
     },
     {
@@ -14,7 +14,7 @@
     },
     {
       "name": "GetWeather"
-    },**/
+    },
     {
       "name": "RunJenkinsBuild"
     },
@@ -94,7 +94,7 @@
   "regex_features": [],
   "patterns": [],
   "utterances": [
-    /**{
+    {
       "text": "book a flight",
       "intent": "BookFlight",
       "entities": []
@@ -314,29 +314,29 @@
     },
     {
       "text": "what's the forecast for this friday?",
-      "intent": "GetWeather",
+      "intent": "RunJenkinsBuild",
       "entities": []
     },
     {
       "text": "what's the weather like for tomorrow",
-      "intent": "GetWeather",
+      "intent": "RunJenkinsBuild",
       "entities": []
     },
     {
       "text": "what's the weather like in new york",
-      "intent": "GetWeather",
+      "intent": "RunJenkinsBuild",
       "entities": []
     },
     {
       "text": "what's the weather like?",
-      "intent": "GetWeather",
+      "intent": "RunJenkinsBuild",
       "entities": []
     },
     {
       "text": "winter is coming",
       "intent": "None",
       "entities": []
-    }, **/
+    },
     {
       "text": "Run a jenkins build",
       "intent": "RunJenkinsBuild",
@@ -344,11 +344,6 @@
     }, 
     {
       "text": "I'd like to run a jenkins build",
-      "intent": "RunJenkinsBuild",
-      "entities": []
-    }, 
-    {
-      "text": "run a jenkins build",
       "intent": "RunJenkinsBuild",
       "entities": []
     }

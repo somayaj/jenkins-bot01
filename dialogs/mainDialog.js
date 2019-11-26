@@ -79,7 +79,7 @@ class MainDialog extends ComponentDialog {
         // Call LUIS and gather any potential booking details. (Note the TurnContext has the response to the prompt)
         const luisResult = await this.luisRecognizer.executeLuisQuery(stepContext.context);
         switch (LuisRecognizer.topIntent(luisResult)) {
-            console.log("intent" + LuisRecognizer.topIntent(luisResult));
+            
         /**case 'BookFlight': {
             // Extract the values for the composite entities from the LUIS result.
             const fromEntities = this.luisRecognizer.getFromEntities(luisResult);
@@ -106,7 +106,7 @@ class MainDialog extends ComponentDialog {
         } 
         case 'RunJenkinsBuild': {
             // We haven't implemented the GetWeatherDialog so we just display a TODO message.
-            const getRunJenkinsBuildText = 'TODO: get weather flow here';
+            const getRunJenkinsBuildText = 'TODO: get jenkins flow here';
             await stepContext.context.sendActivity(getRunJenkinsBuildText, getRunJenkinsBuildText, InputHints.IgnoringInput);
             break;
         }
