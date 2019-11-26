@@ -12,9 +12,9 @@
     {
       "name": "Cancel"
     },
-    {
+    /**{
       "name": "GetWeather"
-    },
+    },**/
     {
       "name": "RunJenkinsBuild"
     },
@@ -313,28 +313,18 @@
       ]
     },
     {
-      "text": "what's the forecast for this friday?",
+      "text": "execute a jenkins build?",
       "intent": "RunJenkinsBuild",
       "entities": []
     },
     {
-      "text": "what's the weather like for tomorrow",
+      "text": "perform a jenkins build",
       "intent": "RunJenkinsBuild",
       "entities": []
     },
     {
-      "text": "what's the weather like in new york",
+      "text": "let's get a jenkins build going",
       "intent": "RunJenkinsBuild",
-      "entities": []
-    },
-    {
-      "text": "what's the weather like?",
-      "intent": "RunJenkinsBuild",
-      "entities": []
-    },
-    {
-      "text": "winter is coming",
-      "intent": "None",
       "entities": []
     },
     {
