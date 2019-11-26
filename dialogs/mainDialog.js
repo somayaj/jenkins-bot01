@@ -98,13 +98,13 @@ class MainDialog extends ComponentDialog {
             return await stepContext.beginDialog('bookingDialog', bookingDetails);
         }
 **/
-        case 'GetWeather': {
+        case 'RunJenkinsBuild': {
             // We haven't implemented the GetWeatherDialog so we just display a TODO message.
             const getWeatherMessageText = 'TODO: get weather flow here';
             await stepContext.context.sendActivity(getWeatherMessageText, getWeatherMessageText, InputHints.IgnoringInput);
             break;
         } 
-        case 'RunJenkinsBuild': {
+        case 'GetWeather1': {
             // We haven't implemented the GetWeatherDialog so we just display a TODO message.
             const getRunJenkinsBuildText = 'TODO: get jenkins flow here';
             await stepContext.context.sendActivity(getRunJenkinsBuildText, getRunJenkinsBuildText, InputHints.IgnoringInput);
