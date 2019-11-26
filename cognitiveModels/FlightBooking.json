@@ -16,11 +16,11 @@
       "name": "GetWeather"
     },
     {
-      "name": "None"
-    }, 
-    {
       "name": "RunJenkinsBuild"
-    } 
+    },
+    {
+      "name": "None"
+    }
   ],
   "entities": [],
   "composites": [
