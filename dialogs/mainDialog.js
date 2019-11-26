@@ -105,8 +105,8 @@ class MainDialog extends ComponentDialog {
         } 
         case 'RunJenkinsBuild': {
             // We haven't implemented the GetWeatherDialog so we just display a TODO message.
-            const getWeatherMessageText = 'TODO: get weather flow here';
-            await stepContext.context.sendActivity(getWeatherMessageText, getWeatherMessageText, InputHints.IgnoringInput);
+            const getRunJenkinsBuildText = 'TODO: get weather flow here';
+            await stepContext.context.sendActivity(getRunJenkinsBuildText, getRunJenkinsBuildText, InputHints.IgnoringInput);
             break;
         }
         default: {
