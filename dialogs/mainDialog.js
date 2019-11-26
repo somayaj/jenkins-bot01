@@ -79,6 +79,7 @@ class MainDialog extends ComponentDialog {
         // Call LUIS and gather any potential booking details. (Note the TurnContext has the response to the prompt)
         const luisResult = await this.luisRecognizer.executeLuisQuery(stepContext.context);
         switch (LuisRecognizer.topIntent(luisResult)) {
+            console.log("intent" + LuisRecognizer.topIntent(luisResult));
         /**case 'BookFlight': {
             // Extract the values for the composite entities from the LUIS result.
             const fromEntities = this.luisRecognizer.getFromEntities(luisResult);
