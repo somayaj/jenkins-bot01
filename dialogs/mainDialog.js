@@ -102,8 +102,13 @@ class MainDialog extends ComponentDialog {
             const getWeatherMessageText = 'TODO: get weather flow here';
             await stepContext.context.sendActivity(getWeatherMessageText, getWeatherMessageText, InputHints.IgnoringInput);
             break;
-        }
-
+        } 
+        case 'RunJenkinsBuild': {
+            // We haven't implemented the GetWeatherDialog so we just display a TODO message.
+            const getWeatherMessageText = 'TODO: get weather flow here';
+            await stepContext.context.sendActivity(getWeatherMessageText, getWeatherMessageText, InputHints.IgnoringInput);
+            break;
+        },
         default: {
             // Catch all for unhandled intents
             const didntUnderstandMessageText = `Sorry, I didn't get that. Please try asking in a different way (intent was ${ LuisRecognizer.topIntent(luisResult) })`;
